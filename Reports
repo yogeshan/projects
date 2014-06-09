@@ -1,0 +1,63 @@
+1. Radius proportional
+
+2. Negative Bar chart for student distribution
+
+3. Different colour for student for colour and faculty in google map
+
+4. Make check box selected (all) in google map
+
+5. Descending order in city wise tree-map with delta and top 5
+
+6. Gender distribution :
+	level
+	city
+	overall
+
+-----------------------------	19th December	----------------
+
+1. Student distribution Data table with all school
+
+2. Student distribution Tree map ordered
+
+3. Blue radius is too dark in in State wise registration (overlapping markers)
+	a. Use different colour for Student
+	b. Use different colour for Faculty
+
+4. Google map City wise registration.
+
+5. Google map state wise registration.
+
+6. Display Google map on same Page
+
+7. Circle packing with radius proportional to unique users
+	Sub
+	Level
+	Topic
+	Unique participant and total attempts
+
+8. Rename Total score to average score in data table
+
+9. Re-arrange columns of Data table.
+
+10. Remove date, percentage score, remove max score, Total attempts, add level of subject.
+
+11. Change colours in colour wheel.
+
+12. After clicking on section display at top because we loosing info in colour wheel.
+
+13. Question Bank / Topic Strength with Circle packing.
+	All topics in same subject bubble
+	- Easy topic in one bubble
+	- Middle Topic in separate bubble 
+
+14. Partition Layout
+
+15. Performance subject wise with rank,level,subject,user id,average score,total attempts
+
+
+# Good performer is pending
+# Consistent user is pending
+
+
+
+
