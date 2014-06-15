@@ -1,0 +1,439 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acadia</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="assets/css/acadia.css" />
+
+        <link href="assets/font_awesome/css/font-awesome.css" rel="stylesheet">
+
+        <style>
+            .title{
+                font-size: 30px;
+                font-family: ft-1;
+                margin-top: 15px;
+            }
+            .sub-title{
+                font-size: 14px;
+                border-bottom: 1px dashed rgba(117, 117, 117, 0.55);
+                margin-bottom: 14px;
+                padding-bottom: 7px;
+            }
+            .mar-10{
+                margin-left: 20%;
+                width: 60%;
+            }
+
+            .chk-line{
+                font-size: 20px;
+
+            }
+            .para{
+                font-family: 'Raleway';
+                font-size: 14px;
+                text-align: justify;
+                line-height: 20px;
+                margin: 10px 0px 20px;
+                border-bottom: 1px dashed #c7c7c7;
+                padding-bottom: 8px;
+            }
+            .clauses{
+
+            }
+            .clauses .first{
+                font-size: 18px;
+            }
+            .clauses .first .para{
+
+            }
+            .clauses .para .second{
+                font-family: 'Raleway';
+                font-size: 14px;
+                text-align: justify;
+                line-height: 20px;
+                margin: 10px 0px;
+                padding-left: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+
+
+<link rel="stylesheet" href="assets/css/navbar.css" />
+<style>
+    .mobile-nav{
+        float: right;
+        font-size: 20px;
+        margin-top: 12px;
+        display: none;
+        -webkit-transition: all 0.2s ease; 
+    }
+    .mobile-nav:hover{
+        color: orangered;
+    }
+
+    .collapser{
+        float: right;
+        height: auto !important;
+        overflow: hidden;
+    }
+    @media screen and (max-width:1200px){
+        .collapser{
+            max-height: 0 !important;
+            position: absolute ;
+            top: 128px;
+            left: 30px;
+            right: 30px;
+            background: white;
+            -webkit-transition: max-height 0.35s ease;
+            -moz-transition: max-height 0.35s ease;
+            -o-transition: max-height 0.35s ease;
+            transition: max-height 0.35s ease;
+        }
+        .collapser.in{
+            max-height: 400px !important;
+        }
+        .mobile-nav{
+            display: block;
+        }
+        .small .collapser{
+            top: 52px;
+        }
+
+        .nav{
+            float: none;
+        }
+        .nav li{
+            display: block
+        }
+        .nav>li>a{
+            z-index: 10;
+        }
+        .nav li .nav-sub{
+            z-index: 1;
+            border: 1px solid #d5d5d5;
+            padding: 25px 0% 25px 5%;
+            left: 180px;
+            right: 0px;
+            width: auto;
+        }
+    }
+</style>
+<header>
+    <a class="mobile-nav" onclick="$('.collapser').toggleClass('in');">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div class="collapser">
+        <ul id="navBaba" class="nav">
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+            <li>
+                <a href="services_1.html">Services</a>
+                <div class="nav-sub">
+                    <div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Packages</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Instant</a></li>
+                            <li><a href="#">Trial Service</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Pricing</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Instant</a></li>
+                            <li><a href="#">Price comparison</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Business</a></li>
+                            <li><a href="#">Coming soon</a></li>
+                            <li><a href="#">Self Help</a></li>
+                            <li><a href="#">Quick guide</a></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <a href="support.html">Support</a>
+                <div class="nav-sub">
+                    <div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Tech Profile</a></li>
+                            <li><a href="#">Tech Profile</a></li>
+                            <li><a href="#">Quick guide</a></li>
+                            <li><a href="#">Self Help</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Ticket System</a></li>
+                            <li><a href="#">Raise Ticket</a></li>
+                            <li><a href="#">Book Session</a></li>
+                            <li><a href="#">Instant Chat</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">More</a></li>
+                            <li><a href="#">Workflow</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                        </ol>
+                    </div>
+
+                </div>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li >
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="signIn.html">Sign In</a>
+            </li>
+        </ul>
+    </div>
+
+    <a class="logo" href="#">
+        Acadia <span class="logo-tm">INC.</span>
+    </a>
+</header>
+<div style="height: 128px;"></div>
+
+        <div class="main-content">
+            <div class="mar-10">
+                <div class="title">Acadia Inc. Refund / Cancellation Policy</div>
+                <div class="sub-title">Last modified: April 30, 2014 (<a href="#">download</a>)</div>
+                <div class="chk-line">
+                    Instant Session based Plans & 30 Days Instant Bronze Subscription Plan are non - refundable.
+                </div>
+                <div class="para">
+                    &nbsp;&nbsp;&nbsp;&nbsp; Since Acadia Technology is offering non-tangible irrevocable services we do not issue refunds once the order is accomplished and the instant or session based services is completely delivered. As a customer 'you' are responsible for understanding this upon purchasing any session based or 30 days subscription packages at our site. For better customer relationship, Acadia Technology use 100% risk free selling practice which includes delivery of our services before you transact the actual payment on our website www.acadiatechnology.com
+                    However, we realize that exceptional circumstance can take place with regard to the character of 
+                    the product we supply.
+                </div>
+                <div class="chk-line">
+                    Therefore, we do honor requests for the refund & cancellation on the following cases:
+                </div>
+                <div class="para">
+                    &nbsp;&nbsp;&nbsp;&nbsp; PC Maintenance Monthly Plans Subscribers are eligible for cancellation & full or partial refund. The Monthly Support Subscription Plans (includes Semi - Annual Single PC, Annual Single PC, Biennial Double PC, Lifetime Double PC) as the name suggests, requires a six months to four years commitment and the amount of subscription fee is charged 50% to 75% in advance. However, refund or cancellation of such subscriptions is subject to pure discretion of the company's management upon the merits of an individual case.
+                </div>
+                <br>
+                <div class="chk-line">
+                    Refund Clauses:
+                </div>
+                <br>
+                <div class="clauses">
+                    <div class="first">
+                        1. Inability to deliver the service Refund will be issued in following cases:
+                    </div>
+                    <div class="para">
+                        <div class="second">
+                            1.1) Where all the prerequisites which were required to resolve the problem were present but still 
+                            all or any specific issue was not resolved by our technical team till the time account was active.
+
+                        </div>
+                        <div class="second">
+                            1.2) Follow up support sessions were not provided as scheduled. In case our technician didn’t get 
+                            back on time of next follow up support session, we request customers to notify us as soon as 
+                            possible so that we can arrange for an instant follow up session.
+                        </div>
+                    </div>
+                    <div class="first">
+                        2. Service not-as-described:
+                    </div>
+                    <div class="para">
+                        <div class="second">
+                            2.1) such issues should be reported to our Technical Support Department within 7 days from the 
+                            date of the purchase. Clear evidence must be provided proving that the purchased service plan is 
+                            not as it is described on the website or by our sales representative.
+
+                        </div>
+                        <div class="second">
+                            2.2) Issue lies out of scope for the particular plan. 
+                            Complaints which are based merely on the customer's false expectations or wishes are not 
+                            honored. We recommend all our customers to avail the sample / trial services for evaluation 
+                            purpose before making any payment with us.
+
+                        </div>
+                    </div>
+
+
+                    <div class="first">
+                        3. Major Defects: 
+                    </div>
+                    <div class="para">
+                        <div class="second">
+                            &nbsp;&nbsp;&nbsp;&nbsp; Although all the services and third party software used are thoroughly tested before its application and our technicians are highly qualified, skilled & experienced in providing technical support still unexpected errors, internal conflicts or compatible issues may occur. Such issues must be submitted to our Technical Support Team's notice as early as possible. We keep the right to rectify the error or defect within 72 hours. If any deficiency is approved and we fail 
+                            to correct it within 72 hours from the date of the initial complaint letter or any other notification provided by a Customer, the refund will be issued to the customer in full without any compensations or, at customer's choice, replacement of the service of the same or around the same value can be offered; Please be advised that temporary remote access to your system can be requested by our technicians in order to identify and fix the possible issues with our service. Failure to provide such access in a timely manner may result in a delayed resolution of the issue. Refusal to provide access to your system will result in your inability to qualify for a refund.
+                        </div>
+                        <div class="second">
+                            &nbsp;&nbsp;&nbsp;&nbsp; For all our subscription-based plan except the 30 days Instant Subscription (Bronze plan) , the Money-Back Guarantee is valid for 45 days, beginning at the time of online purchase for the plans. Subscription which had been through for three months, there will be refund for up to 50% if only one support session referred, and if more than one support session has been referred then per support session fee will be charged and balance amount will be refunded. For the period exceeding six months, Acadia Technology will exercise its discretion in deciding, depending upon the time invested in it, from no refund to Pro-rata refund on a case to case basis.
+                            Requests for a refund need to be mailed at <a href="#">support@acadiatechnology.com</a> within the period of 30 days after the order is placed. You can also notify us over the phone at 1-800-874-3902. You as a customer should accompany this request with detailed and grounded reasons why you apply for a refund. Please make sure your request does not contradict our <a href="#">Terms and Conditions</a> (terms of services) and limited <a href="#">warranty</a> terms at warranty.
+
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="chk-line">
+                    Cancellation Clause:
+                </div>
+                <br>
+                <div class="clauses">
+                    <div class="para">
+                        Acadia Technology may deactivate/discontinue the PC Support Subscription plans or instant support session plans without notice in case you fail to pay the 
+                        applicable fees.
+                    </div>
+                    <div class="first">
+                        1. Billing Issues:
+                    </div>
+                    <div class="para">
+                        You shall notify any billing problems or disputes within 30 days after the charge first appears on a statement from the credit card provider. You waive your right to dispute any billing problem if you fail to notify within the 30 day period.
+                    </div>
+                    <div class="first">
+                        2. Renewal of Plan:
+                    </div>
+                    <div class="para">
+                        You understand that Acadia Technology recommends renew of its subscription plans at end of its subscription cycle unless explicitly stated otherwise. However your credit card will not be charged automatically with the amount of the then prevailing subscription charges as per the payment option that you selected at the time of registering with Acadia Technology unless you call us & request for renewal of plans or agree to our request to renew it. If you would like to opt out of the 'Auto Renewal', please call us at 1-800-874-3902 & speak with one of our customer service representative at least 30 days prior to your subscription 
+                        end date to discontinue your service
+                    </div>
+                    <div class="first">
+                        3. Method of Payment:
+                    </div>
+                    <div class="para">
+                        You shall pay all fees in 50% to 75% in advance for subscription based plans and 100% as post paid fee for instant support session based plans using all major credit & debit cards through our secured payment gateway on our website www.acadiatechnology.com. Our Technical Support Team is always eager to assist you and deliver highly professional support in a timely manner. Thank you for purchasing our products.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+
+<footer>
+    <div class="div-800">
+        <div class="f-row">
+            <div class="f-item">
+                <h1>
+                    <a href="#">About</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Locations</a></li>
+                    <li><a href="#" >Our Story</a></li>
+                    <li><a href="#" >Team</a></li>
+                    <li><a href="#" >Portfolio</a></li>
+                    <li><a href="#" >Awards</a></li>
+                    
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="#">Services</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Instant Service</a></li>
+                    <li><a href="#" >Subscription Based</a></li>
+                    <li><a href="#" >Free Trial</a></li>
+                    <li><a href="#" >Delivery</a></li>
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="support.html">Support</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Workflow</a></li>
+                    <li><a href="#" >Hardware & Software</a></li>
+                    <!--<li><a href="#" >Software</a></li>-->
+                    <li><a href="whyus.html" >Why Us</a></li>
+                    <li><a href="#" >Tech Expert</a></li>
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="contact.html">Contacts</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Send a message</a></li>
+                    <li><a href="#" >Find Us</a></li>
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="#">More</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Send a Feedback</a></li>
+                    <li><a href="#" >Chat with Us</a></li>
+                    <li><a href="#" >Terms of use</a></li>
+                    <li><a href="#" >FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="chevrons">
+        <div class="div-800">
+            <div class="connect-box">
+                Connect with us on :
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#" style="font-size: 28px;padding: 7px;"><i class="fa fa-dribbble"></i></a>
+                <a href="#" style="font-size: 26px;padding: 7px;"><i class="fa fa-linkedin"></i></a>
+                <a href="#" style="font-size: 30px;padding: 7px;"><i class="fa fa-twitter"></i></a>
+                <input type="text" class="txtconnect" />
+            </div>
+        </div>
+    </div>
+    <div class="div-800">
+        <div class="f-row">
+            <div class="f-item" style="width: 150px;">
+                <ul>
+                    <li><a href="#" >Acadia INC</a></li>
+                    <li><a href="#" >Acadia INC,Wilmington</a></li>
+                    <li><a href="#" >Email</a></li>
+                </ul>
+            </div>
+            <div class="f-item">
+
+                <ul>
+                    <li><a href="#" >1800 874 3902</a></li>
+                    <li><a href="#" >998989XXXX</a></li>
+                    <li><a href="#" >abc@bbc.com</a></li>
+                </ul>
+            </div>
+            <div class="f-item" style="float: right;width: 450px;margin-right: 30px;">
+                <div class="tittle">Acadia Inc.</div>
+                <div class="sub-tittle">We also provide trial services. (<a href="#">Trial Session</a>)</div>
+            </div>
+        </div>
+        <div class="terms"> 
+            &copy; 2013–2014 Acadia INC. <a href="terms.html">Terms &amp; Conditions</a> : <a href="privacy.html">Privacy Policy</a> : <a href="refund.html">Refund Policy</a> : <a href="warranty.html">Service Warranty</a> | <a href="#">Technician Login</a>
+        </div>
+    </div>
+</footer>
+
+        <script src="assets/js/jQuery1.8.3.js"></script>
+        <script>
+            
+            $('a').click(function(){
+                
+                $('a').removeClass('active');
+                $(this).addClass('active');
+            });
+            
+            $(window).scroll(function(){
+                if($(this).scrollTop()<$(window).height()-300){
+                    $('header').removeClass('small');
+                }else{
+                    $('header').addClass('small');
+                }
+            });
+        </script>
+
+
+    </body>
+</html>
+
