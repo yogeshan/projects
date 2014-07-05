@@ -1,0 +1,1063 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acadia</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="assets/css/acadia.css" />
+        <link href="assets/font_awesome/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/testimonials.css">
+        <style>
+
+        </style>
+    </head>
+    <body>
+        
+
+
+
+
+<link rel="stylesheet" href="assets/css/navbar.css" />
+<style>
+    header{
+        position: fixed;
+        background: white;
+
+        width: 100%;
+        z-index: 999;
+        top: 0px;
+        padding: 40px 30px 0px 30px;
+        height: 128px;
+        border-bottom: 1px solid rgba(190, 187, 183, 0.49);
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+    }
+    header.small{
+        padding: 5px 30px 0px 30px;
+        height: 52px;
+    }
+    .logo{
+        font-family: 'ft-1';
+        font-size: 40px;
+    }
+    .logo-tm{
+        position: relative;
+        top: -20px;
+        font-size: 15px;
+        left: -12px;
+    }
+    .nav{
+        list-style: none;
+        float: right;
+    }
+    .nav>li{
+        display: inline-block;
+    }
+    .nav>li>a{
+        font-family: 'Raleway';
+        position: relative;
+        color: #242935;
+        display: inline-block;
+        font-size: 16px;
+        padding: 16px 20px 52px 20px;
+
+        text-transform: uppercase;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+    }
+    .nav>li>a:after{
+        content: ' ';
+        position: absolute;
+        right: 0px;
+        width: 1px;
+        top: 18px;
+        height: 12px;
+        background: #CCC;
+    }
+    .small .nav>li>a{
+        padding: 13px 20px;
+    }
+    .nav>li:last-child>a:after{
+        display: none;
+    }
+    .nav>li>a.active{
+
+        border-bottom: 1px solid #1496bb;
+    }
+
+    .nav>li>a:hover{
+        border-bottom: 1px solid rgb(255,48,67);
+    }
+    .nav>li>a:active,.nav>li>a:focus{
+
+        border-bottom: 1px solid rgb(255,48,67);
+    }
+
+
+
+    .nav-sub{
+        position: absolute;
+        width: 100%;
+
+        background: #FFFFFF;
+        left: 0px;
+        top: 128px;
+        padding: 25px 10% 10px 12%;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: opacity 0.4s ease, top 0.3s ease;
+        -moz-transition: opacity 0.4s ease, top 0.3s ease;
+        -o-transition: opacity 0.4s ease, top 0.3s ease;
+        transition: opacity 0.4s ease, top 0.3s ease;
+    }
+    .small .nav-sub{
+        top: 52px;
+    }
+    .nav li:hover .nav-sub{
+        /*display: block;*/
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .blk-30-nav{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+    }
+    .blk-30-nav ol{
+        list-style: none;
+    }
+    .blk-30-nav ol li{
+        /*display: inline-block;*/
+    }
+    .blk-30-nav ol li a{
+        font-family: 'Raleway';
+        position: relative;
+        color: #242935;
+        display: inline-block;
+        font-size: 16px;
+        padding: 5px 5px 6px 5px;
+        text-transform: uppercase;
+    }
+    .blk-30-nav ol li a:hover{
+        text-decoration: underline;
+    }
+    .blk-30-nav ol li.nav-title{
+        border-bottom: 1px dashed orange;
+        margin-right: 20%;
+        margin-bottom: 10px;
+    }
+
+    .blk-30-nav ol li.nav-title a{
+        font-size: 18px;   
+        color: orange;
+    }
+
+
+
+
+    .mobile-nav{
+        float: right;
+        font-size: 20px;
+        margin-top: 12px;
+        display: none;
+        -webkit-transition: all 0.2s ease; 
+    }
+    .mobile-nav:hover{
+        color: orangered;
+    }
+
+    .collapser{
+        float: right;
+        height: auto !important;
+
+    }
+
+    .drop-down{
+        display: none;
+        color: orange;
+        float: right;
+        font-size: 15px;
+        border: 1px solid #BBBBBB;
+        border-radius: 50px;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        padding-top: 3px;
+        vertical-align: top;
+
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+        position: relative;
+        top: -3px;
+    }
+    .drop-down:hover{
+        color: white;
+        background: orange;
+        border-color: orange;
+    }
+
+
+
+
+
+
+
+
+    .nav-sub-small-con{
+        /*position: relative;*/
+    }
+    .nav-sub-small-con ul{
+        list-style: none;
+        position: absolute;
+        right: 0px;
+        top: 100px;
+
+        right: 30px;
+        top: 9px;
+        width: 180px;
+        background: whitesmoke;
+        border: 1px solid orange;
+    }
+    .nav-sub-small-con ul:before{
+        content: ' ';
+        position: absolute;
+        right: 20px;
+        top: -20px;
+        z-index: 1000;
+        border: 10px solid transparent;
+        border-bottom: 10px solid orange;
+    }
+    .nav-sub-small-con li{
+        border-bottom: 1px solid orange;
+    }
+    .nav-sub-small-con li:last-child{
+        border: 0;
+    }
+    .nav-sub-small-con li a{
+        display: inline-block;
+        padding: 8px 30px;
+        font-size: 16px;
+        color: #444;
+    }
+    /*            .small .nav-sub-small-con ul{
+                    top:56px;   
+                }*/
+
+
+
+
+    @media screen and (max-width:1200px){
+        .nav>li>a{
+            padding: 13px 20px;
+        }
+
+        .collapser{
+            max-height: 0 !important;
+            position: absolute ;
+            top: 128px;
+            /*                    overflow: hidden;*/
+            /*            left: 30px;
+                        right: 30px;*/
+            left: 0px;
+            right: 0px;
+            padding: 0px 30px;
+            background: white;
+            -webkit-transition: max-height 0.35s ease;
+            -moz-transition: max-height 0.35s ease;
+            -o-transition: max-height 0.35s ease;
+            transition: max-height 0.35s ease;
+
+            overflow: auto;
+        }
+        .collapser.in{
+            max-height: 1024px !important;
+            
+        }
+        .small .collapser{
+            top: 52px;
+        }
+        .mobile-nav{
+            display: block;
+        }
+        .drop-down{
+            display: block;
+        }
+        .nav{
+            float: none;
+            padding-bottom: 10px;
+        }
+/*        .in .nav{
+            margin-bottom: 10px;
+        }*/
+        .nav li{
+            display: block;
+            position: relative;
+
+        }
+        .nav>li{
+            border: 1px solid rgb(224, 224, 224);
+            border-top: 0px;
+        }
+        .nav>li>a{
+            z-index: 10;
+            display: block;
+        }
+        .nav>li>a:after{
+            display: none;
+        }
+
+        .nav li .nav-sub{
+
+            position: relative;
+            padding:0px 30px;
+            /*border: 1px solid;*/
+            display: none;
+        }
+
+        .nav li.visible-mobile .nav-sub{
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            top: 0px;
+        }
+
+        .blk-30-nav ol li{
+            display: inline-block;   
+        }
+
+
+
+
+        .blk-30-nav{
+            display: block;
+            width: 100%;
+        }
+        .blk-30-nav ol li.nav-title{
+            margin-right: 0%;
+        }
+        .nav-sub-small-con ul{
+            position: relative ;
+            top: 3px;
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            right: 0px;
+        }
+        .nav-sub-small-con ul:before{
+            display: none;
+        }
+        .nav-sub-small-con li a{
+            font-size: 12px;
+            display: block;
+
+        }
+        .blk-30-nav ol li a{
+            font-size: 12px;
+        }
+        .blk-30-nav ol li.nav-title a{
+            font-size: 12px;
+        }
+        .nav>li>a{
+            font-size: 12px;
+        }
+    }
+</style>
+<header>
+    <a class="mobile-nav" onclick="$('.collapser').toggleClass('in');">
+        <i class="fa fa-bars"></i>
+    </a>
+    <div class="collapser">
+        <ul id="navBaba" class="nav">
+            <li>
+                <a href="index.html" class="active">Home</a>
+            </li>
+
+            
+            <!--class="visible-mobile"-->
+            <li >
+                <a href="services.html">
+                    Services
+                    <span class="drop-down"><i class="fa fa-chevron-down"></i></span>
+                </a>
+                <div class="nav-sub">
+                    <div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Packages</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Instant</a></li>
+                            <li><a href="#">Trial Service</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Pricing</a></li>
+                            <li><a href="#">Subscription</a></li>
+                            <li><a href="#">Instant</a></li>
+                            <li><a href="#">Price comparison</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Business</a></li>
+                            <li><a href="#">Coming soon</a></li>
+                            <li><a href="#">Self Help</a></li>
+                            <li><a href="#">Quick guide</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="support.html">
+                    Support
+                    <span class="drop-down"><i class="fa fa-chevron-down"></i></span>
+                </a>
+                <div class="nav-sub">
+                    <div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Tech Profile</a></li>
+                            <li><a href="#">Tech Profile</a></li>
+                            <li><a href="#">Quick guide</a></li>
+                            <li><a href="#">Self Help</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">Ticket System</a></li>
+                            <li><a href="#">Raise Ticket</a></li>
+                            <li><a href="#">Book Session</a></li>
+                            <li><a href="#">Instant Chat</a></li>
+                        </ol>
+                    </div><div class="blk-30-nav">
+                        <ol>
+                            <li class="nav-title"><a href="#">More</a></li>
+                            <li><a href="#">Workflow</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li >
+                <a href="contact.html">Contact Us</a>
+            </li>
+            <li>
+                <a href="signIn.html">Sign In</a>
+            </li>
+
+<!--            <li class="nav-sub-small-con">
+                <a href="#">
+                    Yogesh
+                    <span class="drop-down"><i class="fa fa-chevron-down"></i></span>
+                </a>
+                <div class="nav-sub">
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </li>-->
+        </ul>
+    </div>
+
+    <a class="logo" href="#">
+        Acadia <span class="logo-tm">INC.</span>
+    </a>
+</header>
+<div style="height: 128px;"></div>
+
+    
+
+
+
+
+
+
+        <div class="chevrons chev-white">
+            <div class="testimonials">
+                <div class="title">
+                    Success Stories
+                    <p>- Our client appreciations</p>
+                </div>
+                <style>
+                    .row{
+                        position: relative;
+                        padding-top: 20px;
+                    }
+                    .row:before{
+                        content: '';
+                        height: 100%;
+                        width: 4px;
+                        background: orange;
+                        left: 166px;
+                        position: absolute;
+                        top: 0px;
+                    }
+                    .item{
+                        position: relative;
+                        min-height: 140px;
+                        margin-bottom: 40px;
+                    }
+                    .item:before{
+                        content: '';
+                        height: 4px;
+                        width: 55px;
+                        background: orange;
+                        left: 140px;
+                        position: absolute;
+                        top: 64px;
+                        z-index: 0;
+                    }
+
+                    .item .pic{
+                        position: absolute;
+                        left: 0px;
+                        height: 140px;
+                        width: 140px;
+                        overflow: hidden;
+                        border-radius: 80px;
+                        border: 2px solid #bbbbbb;                        
+                    }
+                    .item .pic img{
+                        width: 100%;
+                    }
+                    .item .content{
+                        background: white;
+                        padding: 10px 20px;
+                        margin-left: 194px;
+                        font-size: 14px;
+                        border:1px solid #BBBBBB;
+                        min-height: 140px;
+                        position: relative;
+                        z-index: 1;
+                        text-align: left;
+                    }
+                    .user-msg{
+                        font-size: 16px;
+                        line-height: 30px;
+                        margin-bottom: 10px;
+                        color: #929292;
+                    }
+                    .user-msg i.fa-quote-left{
+                        font-size: 30px;
+                        color: #CACACA;
+                        line-height: 0px;
+                    }
+                    .user-msg i.fa-quote-right{
+                        font-size: 30px;
+                        color: #CACACA;
+                        line-height: 0px;
+                    }
+                    .info-blk{
+
+                    }
+
+                    .info-blk .user-name{
+                        font-size: 16px;
+                        color: #1ba8e5;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #1AAEEE;
+
+                        font-family: 'Raleway';
+                        letter-spacing: .5px;
+
+                    }
+                    .info-blk .user-address{
+                        font-size: 14px;
+                        color: #929292;
+                    }
+
+                    .float-blk{
+                        float: right;
+                        text-align: right;
+                    }
+                    .info-blk .date{
+
+                        color: #929292;
+                    }
+                    .info-blk .rating{
+
+                        color: orange;
+                    }
+                </style>
+                <div class="row">
+
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/1.png">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+                                I have been with Acadia for awhile and I am very pleased with the support I receive from them. I have had some major issues and Acadia was able to solve them. Their support group is top notch and I would not be able to do anything on my computer upkeep without them.  Thank You Acadia.
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    David Johnston,
+                                </div>
+                                <div class="user-address">
+                                    Pennsylvania, USA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/2.png">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+                                I am very happy with the service that I 
+                                get is always very nice and patient.
+                                I am so glad that my computer is checked on a monthly basis if 
+                                I am having trouble with my computer they know how to fix the computer.
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Linda Chandler,
+                                </div>
+                                <div class="user-address">
+                                    Georgia, USA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/3.png">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+                                I have had service with Acadia for six months and have been completely satisfied with their service and help from their technicians. I would recommend them to anyone and needs help in keeping their computers in working order.
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Erma Raines Dodson,
+                                </div>
+                                <div class="user-address">
+                                    Texas, USA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/4.png" style="height: 100%">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+                                I am very happy with all the service and help learning how to use and run my computer by Acadia who I have been with for several years now.  The staff is always very nice and patient with me when I am having difficulty understanding what to do.  I would highly recommend them to anyone and they are always available when I need them to fix my computer.  
+
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Cynthia Green,
+                                </div>
+                                <div class="user-address">
+                                    Alberta, Canada
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/5.png" style="height: 100%">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+                                I rick legge have had acadia support 4 a long time & they do a great job of fixing your slow computer every time i call them .i will recomed them to anyone who has any coumputer problems
+
+
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Rick legge,
+
+                                </div>
+                                <div class="user-address">
+                                    Alberta, Canada
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/6.png">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+
+                                I have been with Acadia Technology for 2 years & have been very satisfied  with their expertise on the computer. We have a Small Trucking Business & any issues I have had they have been able to solve in a timely matter. I have been very satisfied with their services & they call periodically to run scan on the computer to see if there is any an issue or problems.
+
+
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Carol Hamilton,
+                                </div>
+                                <div class="user-address">
+                                    Kenton, Ohio, USA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/7.png">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+
+                                I have been a customer of Acadia Technology for 6 months from now.  I am very impressed with their services and how quickly problems have been resolved.  A true no-hassle group.  their representatives have always been very kind and helpful with the problems I have had on my computer.. I would gladly recommend them to anyone having issues with their computer.  Well worth it!  I'd give them 5 stars out of 5.
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    James Blanarik,
+                                </div>
+                                <div class="user-address">
+                                    Monaca, Pa., USA
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/8.png" style="height: 100%;width: 110%;margin-left: -5%;">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+
+                                My name is Donna Bustos.  Due to my lack of knowledge with my computer, I called Acadia technology on several occasions to save my crashing computer.  We set up a monthly schedule to see that my computer is running smoothly.  The service has been fast and adequate. .I am happy with the services what they provided me till today from the date of signup with them. 
+                                This time on April 28th due to my ignorance I allowed a company take my information and crash my computer.  Acadia immediately started working on the problem.  After four hours of services, the gentlemen of Acadia restored my computer.  I will now refer my friends to Acadia Technology and also recommend Acadia Technology for all of you.  They are my Heroes!
+
+
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Donna M. Bustos,
+                                </div>
+                                <div class="user-address">
+                                    Alpharetta, Georgia, USA
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pic">
+                            <img src="assets/img/customers/testimonials/9.png" style="height: 100%;width: 110%;margin-left: -5%;">
+                        </div>
+                        <div class="content">
+                            <div class="user-msg">
+                                <i class="fa fa-quote-left"></i>
+
+                                I have been extremely satisfied with the service I have received in the last 6 months with Acadia Technology.  I have been happy speaking to their technicians who are so helpful and patient with me.  I have had many problems such as a virus and not being able to access different programs.  The technician has gone step by step with me giving me plenty of time to understand and correct any problems I have encountered.  I highly recommend this company to all my friends and relatives.  I hope to have their service for many years to come.  My name is Rosemary Kolesnik and I am a senior citizen who is still learning new technology with the computer and the help of Acadia Technology.  I have just purchased their lifetime service to fix my computer.  They have called faithfully every month and I can call them anytime I have a problem. 
+
+
+
+
+
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <div class="info-blk">
+                                <div class="float-blk">
+                                    <div class="date">
+                                        <i class="fa fa-clock-o"></i> 12 March 2012
+                                    </div>
+                                    <div class="rating">
+                                        Ratings:
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+
+                                <div class="user-name">
+                                    Rosemary Kolesnik,
+                                </div>
+                                <div class="user-address">
+                                    California, United States
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+
+<footer>
+    <div class="div-800">
+        <div class="f-row">
+            <div class="f-item">
+                <h1>
+                    <a href="#">About</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Locations</a></li>
+                    <li><a href="#" >Our Story</a></li>
+                    <li><a href="#" >Team</a></li>
+                    <li><a href="#" >Portfolio</a></li>
+                    <li><a href="#" >Awards</a></li>
+                    
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="#">Services</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Instant Service</a></li>
+                    <li><a href="#" >Subscription Based</a></li>
+                    <li><a href="#" >Free Trial</a></li>
+                    <li><a href="#" >Delivery</a></li>
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="support.html">Support</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Workflow</a></li>
+                    <li><a href="#" >Hardware & Software</a></li>
+                    <!--<li><a href="#" >Software</a></li>-->
+                    <li><a href="whyus.html" >Why Us</a></li>
+                    <li><a href="#" >Tech Expert</a></li>
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="contact.html">Contacts</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Send a message</a></li>
+                    <li><a href="#" >Find Us</a></li>
+                </ul>
+            </div><div class="f-item">
+                <h1>
+                    <a href="#">More</a>
+                </h1>
+                <ul>
+                    <li><a href="#" >Send a Feedback</a></li>
+                    <li><a href="#" >Chat with Us</a></li>
+                    <li><a href="#" >Terms of use</a></li>
+                    <li><a href="#" >FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="chevrons">
+        <div class="div-800">
+            <div class="connect-box">
+                Connect with us on :
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#" style="font-size: 28px;padding: 7px;"><i class="fa fa-dribbble"></i></a>
+                <a href="#" style="font-size: 26px;padding: 7px;"><i class="fa fa-linkedin"></i></a>
+                <a href="#" style="font-size: 30px;padding: 7px;"><i class="fa fa-twitter"></i></a>
+                <input type="text" class="txtconnect" />
+            </div>
+        </div>
+    </div>
+    <div class="div-800">
+        <div class="f-row">
+            <div class="f-item" style="width: 150px;">
+                <ul>
+                    <li><a href="#" >Acadia INC</a></li>
+                    <li><a href="#" >Acadia INC,Wilmington</a></li>
+                    <li><a href="#" >Email</a></li>
+                </ul>
+            </div>
+            <div class="f-item">
+
+                <ul>
+                    <li><a href="#" >1800 874 3902</a></li>
+                    <li><a href="#" >998989XXXX</a></li>
+                    <li><a href="#" >abc@bbc.com</a></li>
+                </ul>
+            </div>
+            <div class="f-item" style="float: right;width: 450px;margin-right: 30px;">
+                <div class="tittle">Acadia Inc.</div>
+                <div class="sub-tittle">We also provide trial services. (<a href="#">Trial Session</a>)</div>
+            </div>
+        </div>
+        <div class="terms"> 
+            &copy; 2013–2014 Acadia INC. <a href="terms.html">Terms &amp; Conditions</a> : <a href="privacy.html">Privacy Policy</a> : <a href="refund.html">Refund Policy</a> : <a href="warranty.html">Service Warranty</a> | <a href="#">Technician Login</a>
+        </div>
+    </div>
+</footer>
+
+
+        <script src="assets/js/jQuery1.8.3.js"></script>
+
+
+        <!------------------------------------------------
+        INSERT OTHER SCRIPTS OVER HERE
+        --------------------------------------------------->
+
+
+        <script src="assets/js/acadia.js"></script>
+        <script>
+            
+            $('a').click(function(){
+                
+                $('a').removeClass('active');
+                $(this).addClass('active');
+            });
+            
+            
+        </script>
+
+
+    </body>
+</html>
+
