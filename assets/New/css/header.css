@@ -1,0 +1,449 @@
+/* 
+    Document   : header
+    Created on : Aug 8, 2014, 12:24:17 PM
+    Author     : Yogi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 41px 30px 0px 30px;
+    background: #354456;
+    background: #092f40;
+    z-index: 1000;
+}
+.body-content{
+    margin-top: 80px;
+}
+.body-content, header,.menu-left{
+    -webkit-transition: all .3s ease-out;
+}
+.logo{
+    font-size: 26px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-close{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    vertical-align: middle;
+    position: relative;
+    /*left: -10px;*/
+    color: orange;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.menu-left{
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    left: -300px;
+    top: 0px;
+    z-index: 1000;
+    box-shadow: inset -10px 0px 10px -5px rgba(0,0,0,0.3);
+    background: rgb(238, 238, 238);
+}
+.menu-active .menu-left{
+    left: 0px;
+}
+.menu-active .menu-close{
+    color: orangered;
+}
+.menu-active .body-content{
+    margin-left: 300px;
+    margin-right: -300px;
+}
+.menu-active header{
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    transform: translateX(300px);
+}
+
+
+.menu-left ul{
+
+}
+.menu-left ul li a {
+    display: block;
+    padding: 0px 16px;
+    min-width: 160px;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: Raleway;
+    color: #646464;
+
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+.menu-left ul li.menu-title a {
+    font-size: 18px;
+    border-bottom: 1px solid #199DE7;
+    padding-bottom: 5px;
+}
+.menu-left ul li.menu-active a {
+    background: rgba(0,0,0,0.1);   
+}
+
+
+
+
+
+
+
+
+
+
+/* Search Blk*/
+
+.search-blk{
+    display: inline-block;vertical-align: middle;
+    position: relative;
+    /*float: right;*/
+    top: 2px;
+    /*right: 30px;*/
+    /*bottom: 8px;*/
+    margin-right: 10px;
+}
+.txtSearch{
+    color: #2f2f2f;
+    color: white;
+    font-size: 14px;
+
+    border: none;
+
+    z-index: 1500;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 1px solid #33B5E5;
+    padding: 5px 0px;
+    outline: none;
+    width: 0%;
+
+    -webkit-transition: all 0.3s ease .3s;
+    -moz-transition: all 0.3s ease .3s;
+    -o-transition: all 0.3s ease .3s;
+    -ms-transition: all 0.3s ease .3s;
+    transition: all 0.3s ease .3s;
+}
+.search-blk:after,.search-blk:before{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    visibility: hidden;
+}
+.search-blk:after{
+    content: ' ';
+    position: absolute;
+    right:   0px;
+    bottom: 0px;
+    height: 5px;
+    width: 1px;
+    background: #33B5E5;
+}
+.search-blk:before{
+
+    content: ' ';
+    position: absolute;
+    left:  0px;
+    bottom: 0px;
+    height: 5px;
+    width: 1px;
+    background: #33B5E5;
+}
+.search-blk i{
+    color: #33B5E5;
+    position: absolute;
+    right:  6px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search-blk:hover .txtSearch{
+    width: 100%;
+    padding: 5px 28px 5px 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.search-blk:hover:after,.search-blk:hover:before{
+    -webkit-transition: all 0.3s ease .3s;
+    -moz-transition: all 0.3s ease .3s;
+    -o-transition: all 0.3s ease .3s;
+    -ms-transition: all 0.3s ease .3s;
+    transition: all 0.3s ease .3s;
+    visibility: visible;
+}
+
+.try-service{
+    color: #444;
+    font-size: 14px;
+
+    font-family: 'Raleway';
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #9C9C9C;
+}
+.btn{
+    position: relative;
+    outline: none;
+    background: transparent;
+
+    padding: 7px 25px;
+    color: white;
+    border-radius: 4px; 
+    display: inline-block;
+
+    -webkit-transition: background 200ms linear, color 200ms linear;
+    -moz-transition: background 200ms linear, color 200ms linear;
+    -ms-transition: background 200ms linear, color 200ms linear;
+    -o-transition: background 200ms linear, color 200ms linear;
+    transition: background 200ms linear, color 200ms linear;
+}
+.btn-blue{
+    background: #365ebf;
+}
+.btn-orange{
+    background: #f06404;
+}
+
+.btn-blue:hover{
+    background: #2a388e;
+}
+.btn-orange:hover{
+    background: #c25002;
+}
+
+.nav>li>a.btn-free{
+    vertical-align: middle;
+
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    top:-3px;
+
+
+    background: #f3ec19;
+    color: #45474d;
+}
+
+
+
+.nav{
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+.nav>li{
+    display: inline-block;
+    /*margin-right: 20px;*/
+}
+.nav>li>a{
+    display: inline-block;
+    font-family: 'Raleway';
+    position: relative;
+    color: #242935;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    text-transform: uppercase;
+
+}
+
+
+
+
+.header-top{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+    background: #07222E;
+    left: 0px;
+    text-align: right;
+    padding: 0px 30px;
+    /*display: none;*/
+}
+.header-top ul{
+    display: inline-block;
+    list-style: none;
+}
+.header-top ul>li{
+    display: inline-block;
+}
+.header-top ul>li>a{
+
+    vertical-align: middle;
+    font-family: 'Raleway';
+    position: relative;
+    color: #242935;
+    color: white;
+    display: inline-block;
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.header-top ul>li>a.btn{
+    color: white;
+}
+.contact-no{
+    padding: 4px 0px;
+}
+.contact-no .c-no{
+    display: inline-block;
+    font-family: 'yogi';
+    position: relative;
+    padding: 0 8px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+.contact-no .c-no:after{
+    content: ' ';
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    background: rgba(0,0,0,0.3);
+    height: 16px;
+    width: 1px;
+
+}
+.contact-no .c-name{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 8px;
+
+    vertical-align: middle;
+}
+.btn-login{
+    margin-right: 11px;
+
+}
+.btn-login:after{
+    content: ' ';
+    position: absolute;
+
+    top: 4px;
+    right: -6px;
+    background: rgba(0,0,0,0.3);
+    height: 16px;
+    width: 1px;
+}
+
+
+
+
+
+
+.nav>li.nav-drop>a{
+    position: relative;
+
+}
+.nav>li.nav-drop>a:after{
+    position: absolute;
+    content: ' ';
+    height: 0px;
+    width: 0px;
+    bottom: -10px;
+    left: 43%;
+    border: 7px solid #ddd; 
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    /*                display: none;*/
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.nav-content{
+    position: absolute;
+    background: rgb(226, 222, 222);
+    width: 100%;
+    top: 79px;
+    left: 0px;
+
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    /*opacity: 0;*/
+    -webkit-transition: all 0.3s ease-out .2s;
+    -moz-transition: all 0.3s ease-out .2s;
+    -o-transition: all 0.3s ease-out .2s;
+    transition: all 0.3s ease-out .2s;
+}
+
+.nav-drop:hover > a:after{
+    visibility: visible !important;
+    bottom: 0px !important;
+    -webkit-transition: all 0.3s ease-out .1s !important;
+    -moz-transition: all 0.3s ease-out .1s !important;
+    -o-transition: all 0.3s ease-out .1s !important;
+    transition: all 0.3s ease-out .1s !important;
+}
+.nav-drop:hover .nav-content{
+    max-height: 400px;
+    visibility: visible;
+    /*opacity: 1;*/
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+
+
+
+
+.nav ol{
+    list-style: none;
+}
+.nav ol li.menu-title{
+    font-size: 18px;
+    border-bottom: 1px solid #199DE7;
+    padding-bottom: 5px;
+}
+.nav ol li a{
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: Raleway;
+    color: #646464;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -ms-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+}
+.nav ol li a:hover{
+
+    color: orange;
+}

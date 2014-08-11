@@ -1,0 +1,1008 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Acadia</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="font_awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="js/carousel/carousel.css" />
+        <link rel="stylesheet" href="css/acadia.css" />
+        <link rel="stylesheet" href="css/header.css" />
+
+        <style>
+
+            .slid img{
+                width: 100%;
+            }
+
+
+
+
+            .services{
+                padding: 50px 10%;
+            }
+            .services:nth-child(odd){
+                background: #E9E0D7;
+                background: #dfdfdf;
+                background: #f0f3f5;
+            }
+
+            .services>div{
+                vertical-align: middle;
+            }
+
+            .pretty-h1{
+                position: relative;
+
+                font-size: 40px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+                text-align: left;
+            }
+            .pretty-h1:before{
+
+                position: absolute;
+                content: '';
+                top: -8px;
+                left: 0px;
+                width: 75px;
+                height: 3px;
+                background: #919191;
+            }
+            .services p{
+                font-size: 18px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+                line-height: 26px;
+            }
+
+            .services .blk-40{
+                text-align: center;
+            }
+            .services .blk-60{
+
+            }
+
+
+
+
+            /*Service 2*/
+
+            .services-2{
+                background: white;
+                padding: 50px 10%;
+            }
+            .services-2>div{
+                vertical-align: middle;
+            }
+            .pretty-h1-sub{
+                position: relative;
+                font-size: 24px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+            }
+            .read-mr{
+                color: #2980b9;
+                font-size: 18px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+                line-height: 26px;
+                -webkit-transition: all .3s ease-in;
+                -moz-transition: all .3s ease-in;
+                -o-transition: all .3s ease-in;
+                transition: all .3s ease-in;
+            }
+            .read-mr:hover{
+                color: #1A618F;
+            }
+            .services-2 p{
+                font-size: 18px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+                line-height: 26px;
+                text-align: justify;
+            }
+            .services-2>.blk-50>img{
+                width: 100%;
+            }
+            .services-2 .blk-50:first-child{
+                padding-right: 20px;
+            }
+            .services-2 .blk-50:last-child{
+                padding-left: 20px;
+            }
+            /*Service 2 Ends*/
+
+
+
+
+
+            header{
+                text-align: right;
+            }
+
+            .header-top{
+                text-align: right;
+            }
+
+            .header-top .hidden-small-desktop{
+                font-family: 'Raleway';
+                font-size: 18px;
+                font-weight: 200;
+                vertical-align: middle;
+                margin-left: 20px;
+                color: orange;
+            }
+            .header-top ul>li>a{
+                /*padding: 5px 20px 5px 20px;*/
+            }
+
+            .logo{
+                position: absolute;
+                width: 74px;
+                top: 2px;
+                left: 30px;
+
+            }
+            .nav{
+                /*margin-right:  140px;*/
+            }
+
+            .nav-content{
+                background: white;
+            }
+            .nav>li.nav-drop>a:after{
+
+                border: 7px solid #fff;
+                border-top-color: transparent;
+                border-left-color: transparent;
+                border-right-color: transparent;
+            }
+            .nav-content .inline-2-100{
+                padding: 0 30px;
+            }
+            .nav ol{
+                list-style: none;
+            }
+            .nav ol li.menu-title{
+                font-size: 18px;
+                border-bottom: 1px solid #199DE7;
+                padding-bottom: 5px;
+            }
+            .nav ol li a{
+                display: block;
+                font-size: 16px;
+                line-height: 28px;
+                font-family: Raleway;
+                color: #646464;
+                -webkit-transition: all 0.25s linear;
+                -moz-transition: all 0.25s linear;
+                -ms-transition: all 0.25s linear;
+                -o-transition: all 0.25s linear;
+                transition: all 0.25s linear;
+            }
+            .nav ol li a:hover{
+
+                color: orange;
+            }
+
+
+            .nav .pretty-h1{
+                position: relative;
+                font-size: 24px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+                margin-top: 20px;
+
+            }
+            .nav .pretty-h1-sub{
+                position: relative;
+                font-size: 20px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+            }
+
+
+            .nav p{
+                font-size: 16px;
+                font-family: 'Raleway';
+                font-weight: 200;
+                margin-bottom: 10px;
+                line-height: 26px;
+                text-align: justify;
+            }
+
+            .pills a{
+                display: inline-block;
+                padding: 7px 10px;
+                border: 1px solid #A31E1E;
+                border-radius: 2px;
+                color: #A31E1E;
+                font-family: 'Raleway';
+                -webkit-transition: all .3s ease-in;
+                -moz-transition: all .3s ease-in;
+                -o-transition: all .3s ease-in;
+                transition: all .3s ease-in;
+                margin-right: 10px;
+            }
+            .pills a:hover,.pills a:active{
+                color: white;
+                background: #A31E1E;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu-left">
+            <div class="try-service">
+                Try our service for free:
+                <a href="#" class="btn btn-blue">Free Trial</a>
+            </div>
+
+            <div style="margin-bottom: 10px;padding: 0px 10px">
+                <a href="#" class="btn btn-blue">Login</a><a href="#" class="btn btn-orange" style="float: right;">Sign Up</a>
+            </div>
+            <ul>
+                <li class="menu-title">
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+                <li class="menu-active">
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+                <li class="menu-title">
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Link 1
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <header>
+            <div class="header-top">
+                <ul>
+                    <li>
+                        <a href="#">Resources</a>
+                    </li><li>
+                        <a href="#">Blogs</a>
+                    </li><li>
+                        <a href="#">Instant Chat</a>
+                    </li><li class="contact-no"> 
+                        <a href="#">
+                            <span class="c-no">
+                                <i class="fa fa-phone"></i> 1800 874 3902
+                            </span>
+                            <span class="c-name">
+                                Contact
+                            </span>
+                        </a>
+                    </li><li>
+                        <a href="#" class="btn btn-orange btn-login">Sign In</a>
+                    </li><li>
+
+                        <a href="#" class="btn btn-blue">Sign Up</a>
+                    </li><li class="hidden-small-desktop">
+                        ( Free Sign Up )
+                    </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars menu-close"></i>
+            <a href="#" class="logo">
+                <img src="img/logo/Aca.svg" style="width: 100%"/>
+            </a>
+            <div class="search-blk" >
+                <i class="fa fa-search"></i>
+                <input type="text"  class="txtSearch"/>
+            </div>
+
+            <ul class="nav">
+                <li class="nav-drop">
+                    <a href="#">
+                        SERVICES
+                    </a>
+                    <div class="nav-content">
+                        <div style="padding: 10px 30px;">
+                            <div class="inline-2-100 blk-30">
+                                <img src="img/downloads/deployment.svg" style="width: 100%;"/>
+                            </div><div class="inline-2-100 blk-70">
+
+                                <h1 class="pretty-h1">
+                                    Multi-channel commerce
+                                </h1>
+                                <h2 class="pretty-h1-sub">
+                                    One experience, multiple channels
+                                </h2>
+                                <p>
+                                    Multi-channel marketing is the most effective way of driving new business towards our clients. Designed with multi-channel in mind, our platform, CURO, offers you seamless control over your product range across multiple channels. Take advantage of our extensive affiliate network and integrate with third parties in rapid time.
+                                </p>
+                                <div class="pills">
+                                    <a href="#">
+                                        Top Ten
+                                    </a>
+                                    <a href="#">
+                                        Subscription
+                                    </a>
+                                    <a href="#">
+                                        Self Help
+                                    </a>
+                                </div>
+                                <!--                                <ol>
+                                                                    <li class="menu-title">
+                                                                        <a href="#">Link 1</a>
+                                                                    </li><li>
+                                                                        <a href="#">Link 1</a>
+                                                                    </li><li>
+                                                                        <a href="#">Link 1</a>
+                                                                    </li><li>
+                                                                        <a href="#">Link 1</a>
+                                                                    </li>
+                                                                </ol>-->
+                            </div>
+                        </div>
+                    </div>
+                </li><li class="nav-drop">
+                    <a href="#">
+                        SUPPORT
+                    </a>
+                    <div class="nav-content">
+                        <div style="padding: 10px 30px;">
+                            <div class="inline-2-100 blk-30">
+                                <img src="img/downloads/design.svg" style="width: 100%;"/>
+                            </div><div class="inline-2-100 blk-70">
+
+                                <h1 class="pretty-h1">
+                                    Multi-channel commerce
+                                </h1>
+                                <h2 class="pretty-h1-sub">
+                                    One experience, multiple channels
+                                </h2>
+                                <p>
+                                    Multi-channel marketing is the most effective way of driving new business towards our clients. Designed with multi-channel in mind, our platform, CURO, offers you seamless control over your product range across multiple channels. Take advantage of our extensive affiliate network and integrate with third parties in rapid time.
+                                </p>
+                                <div class="pills">
+                                    <a href="#">
+                                        Top Ten
+                                    </a>
+                                    <a href="#">
+                                        Subscription
+                                    </a>
+                                    <a href="#">
+                                        Self Help
+                                    </a>
+                                </div>
+                                <!--                                <ol>
+                                                                    <li class="menu-title">
+                                                                        <a href="#">Link 1</a>
+                                                                    </li><li>
+                                                                        <a href="#">Link 1</a>
+                                                                    </li><li>
+                                                                        <a href="#">Link 1</a>
+                                                                    </li><li>
+                                                                        <a href="#">Link 1</a>
+                                                                    </li>
+                                                                </ol>-->
+                            </div>
+                        </div>
+                    </div>
+                </li><li>
+                    <a href="#">
+                        ABOUT US
+                    </a>
+                </li><li>
+                    <a href="#">
+                        CUSTOMERS
+                    </a>
+                </li><li>
+                    <a href="#" class="btn btn-orange btn-free">FREE TRIAL</a>
+                </li>
+            </ul>
+
+
+        </header>
+        <!--Body Content Starts (Used for sliding in mobile)-->
+        <div class="body-content" style="min-height: 1000px;">
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" ></li>
+                    <li data-target="#myCarousel" data-slide-to="2" ></li>
+
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="slid">
+                            <img src="img/my/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slid">
+                            <img src="img/my/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="slid">
+                            <img src="img/my/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+            </div>
+            <!--            <section class="services">
+                            <div class="blk-40 inline-2-100">
+                                <img src="img/downloads/1.gif"/>
+                            </div><div class="blk-60 inline-2-100">
+                                <h1 class="pretty-h1">Is beautiful and engaging</h1>
+                                <p>
+                                    Perfectly crafted user interface and attention to pixel level details makes Loomideck pleasant to work with.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="services">
+                            <div class="blk-60 inline-2-100">
+                                <h1 class="pretty-h1">Saves time</h1>
+                                <p>
+                                    Create an account in seconds, share files and bookmarks within your team by 2 clicks only and save your time!
+                                </p>
+                            </div><div class="blk-40 inline-2-100">
+                                <img src="img/downloads/2.gif"/>
+                            </div>
+                        </section>-->
+
+
+
+
+            <section class="services-2">
+                <div class="blk-50 inline-2-100">
+                    <img src="img/downloads/responsive-ecommerce.png"/>
+                </div><div class="blk-50 inline-2-100">
+                    <h1 class="pretty-h1">Responsive E-commerce</h1>
+                    <h2 class="pretty-h1-sub">
+                        Stay connected, stay mobile
+                    </h2>
+                    <p>
+                        Responsive web design was once the preserve of E-commerce giants. Today it’s is a prerequisite. 2014 is the first year that consumers will spend more time on mobile devices than on desktops, with smartphones and tablets expected to account for 75% of transactions by 2020. Work with us to ensure that your business captures its deserved share of the device migration trend.
+                    </p>
+                    <a class="read-mr" href="#">Read More</a>
+                </div>
+            </section>
+
+            <section class="services-2">
+                <div class="blk-50 inline-2-100">
+                    <h1 class="pretty-h1">
+                        Multi-channel commerce
+                    </h1>
+                    <h2 class="pretty-h1-sub">
+                        One experience, multiple channels
+                    </h2>
+                    <p>
+                        Multi-channel marketing is the most effective way of driving new business towards our clients. Designed with multi-channel in mind, our platform, CURO, offers you seamless control over your product range across multiple channels. Take advantage of our extensive affiliate network and integrate with third parties in rapid time.
+                    </p>
+                    <a class="read-mr" href="#">Read More</a>
+                </div><div class="blk-50 inline-2-100">
+                    <img src="img/downloads/multichannel-feature.svg"/>
+                </div>
+            </section>
+            <section class="services-2">
+                <div class="blk-50 inline-2-100">
+                    <img src="img/downloads/online-strategy.svg" style="width: 70%;"/>
+                </div><div class="blk-50 inline-2-100">
+                    <h1 class="pretty-h1">Online marketing</h1>
+                    <h2 class="pretty-h1-sub">
+                        Targeted approach, measurable results
+                    </h2>
+                    <p>
+                        Online marketing requires more than vision. Our rolling technical support provides you with the programming power you will need to execute your campaigns successfully. With over 10 years of experience promoting our clients products, we know what works. If you are considering expanding into a new market, trust us to provide you with the appropriate tools and expertise.
+                    </p>
+                    <a class="read-mr" href="#">Read More</a>
+                </div>
+            </section>
+
+
+
+
+
+            <style>
+                .service-3{
+                    margin: 0px 10%;
+                    text-align: center;
+                    margin-bottom: 30px;
+
+                }
+                .service-3>div{
+                    padding-left: 20px;
+                    /* margin-bottom: 2%; */
+                    /* border-top: 1px solid; */
+                    /* border-left: 1px solid; */
+                    padding-right: 20px;
+                    padding-top: 2%;
+                    /* border: 1px solid; */
+                    border-right: 1px #BFBFBF solid;
+                    border-bottom: 1px #BFBFBF solid;
+                    min-height:  420px;
+
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                }
+                .service-3>div:hover{
+                    background: white;
+                }
+
+                .service-3 .article{
+                    text-align: left;
+
+                }
+                .service-3 .article>img{
+                    margin-bottom: 20px;
+                }
+                .service-3 .pretty-h1{
+                    font-size: 26px;
+                }
+                .service-3 .article p{
+                    font-size: 18px;
+                    font-family: 'Raleway';
+                    font-weight: 200;
+                    margin-bottom: 10px;
+                    line-height: 26px;
+                    text-align: justify;
+                }
+
+                /*                .service-3 .blk-30{
+                                    
+                                }
+                                .service-3 .blk-60{
+                                    padding-left: 20px;
+                                     margin-bottom: 2%; 
+                                     border-top: 1px solid; 
+                                     border-left: 1px solid; 
+                                    padding-right: 20px;
+                                    padding-top: 2%;
+                                     border: 1px solid; 
+                                    border-right: 1px #BFBFBF solid;
+                                    border-bottom: 1px #BFBFBF solid;
+                                    min-height:  400px;
+                                }*/
+            </style>
+            <section class="service-3">
+                <div class="blk-30 inline-2-100">
+
+                    <div class="article">
+                        <img src="img/downloads/bespoke.svg" />
+                        <h1 class="pretty-h1">
+                            Bespoke E-commerce
+                        </h1>
+                        <p>
+                            We offer bespoke E-commerce solutions, customised to your business and market.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+                </div><div class="blk-30 inline-2-100">
+                    <div class="article">
+                        <img src="img/downloads/strategy.svg" />
+                        <h1 class="pretty-h1">
+                            Strategy & Planning
+                        </h1>
+                        <p>
+                            We strive to offer E-commerce solutions that fit in flawlessly with your online goals and aspirations but we know the platform itself is just the starting point.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+
+                </div><div class="blk-30 inline-2-100" style="border-right: none;">
+                    <div class="article">
+                        <img src="img/downloads/design.svg" />
+                        <h1 class="pretty-h1">
+                            Design & UX</h1>
+                        <p>
+                            Our team are experienced digital designers and usability specialists who understand the role that these factors play in leads, sales and engagement.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+
+                </div><div class="blk-30 inline-2-100">
+                    <div class="article">
+                        <img src="img/downloads/deployment.svg" />
+                        <h1 class="pretty-h1">
+                            Fast Deployment
+                        </h1>
+                        <p>
+                            Our speedy process is a testament to our skill and understanding of the E-commerce industry.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+
+                </div><div class="blk-60 inline-2-100" style="border-right: none;">
+                    <div class="article">
+                        <img src="img/downloads/integration.svg" />
+                        <h1 class="pretty-h1">
+                            Integration
+                        </h1>
+                        <p>
+                            As enterprise class specialists, we know that Google applications, marketing and sale tools, payment processing etc all need to work in unison to offer a complete online experience.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+
+                </div><div class="blk-30 inline-2-100">
+
+                    <div class="article">
+                        <img src="img/downloads/hosting.svg" />
+                        <h1 class="pretty-h1">
+                            Hosting
+                        </h1>
+                        <p>
+                            We partner with a tier 1 hosting company to provide you with a dedicated private cloud environment.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+                </div><div class="blk-30 inline-2-100">
+                    <div class="article">
+                        <img src="img/downloads/support.svg" />
+                        <h1 class="pretty-h1">
+                            Site Support
+                        </h1>
+                        <p>
+                            We understand that a great platform is only one piece of the online business puzzle - it’s also about how you use it.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+
+                </div><div class="blk-30 inline-2-100" style="border-right: none;">
+                    <div class="article">
+                        <img src="img/downloads/monitoring.svg" />
+                        <h1 class="pretty-h1">
+                            Site Monitoring    
+                        </h1>
+                        <p>
+
+                            Effective monitoring of your site not only enables us to resolve any issues instantly, it also identifies any areas for improvement and development.
+                        </p>
+                        <a href="#" class="read-mr" >Read</a>
+                    </div>
+
+                </div>
+
+            </section>
+            <style>
+                .view-more{
+                    border: 1px #BFBFBF solid;
+                    padding: 1%;
+                    color: #2980b9;
+                    font-size: 18px;
+                    font-family: 'Raleway';
+                    font-weight: 200;
+                    margin-bottom: 10px;
+                    line-height: 26px;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    transition: all .3s ease;
+                }
+                .view-more:hover{
+                    background: white;
+                }
+            </style>
+            <div style="margin-top: 30px;text-align: center;margin-bottom: 60px;">
+                <a href="#" class="view-more">View all services</a>
+            </div>
+
+
+            <footer>
+                <style>
+                    footer{
+                        background: #092f40;
+                        min-height: 300px;
+                        padding: 0px 0px;
+                        text-align: center;
+                        color: white;
+                    }
+                    footer .chevrons{
+                        height: 50px;
+                    }
+                    footer .chevrons:before,footer .chevrons:after{
+                        filter: alpha(Opacity=10);
+                        opacity: .1;
+                    }
+                    .div-800{
+                        /*width: 800px;*/
+                        margin: 0 auto;
+                        text-align: left;
+                        position: relative;
+                        z-index: 12;
+                    }
+                    .f-row{
+                        margin-bottom: 30px;
+                        padding-top: 30px;
+                    }
+                    .f-item{
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 20%;
+                        padding-left: 25px;
+                    }
+                    .f-item h1{
+
+                        font-size: 14px;
+                        margin-bottom: 6px;
+                        text-transform: uppercase;
+                    }
+                    .f-item h1 a:hover{
+                        text-decoration: underline;
+                    }
+                    .f-item ul{
+                        list-style: none;
+                    }
+                    .f-item ul a{
+                        color: #ccc;
+                        line-height: 1.5;
+                        letter-spacing: .5px;
+
+                    }
+                    .f-item ul a:hover{
+                        text-decoration: underline;
+                    }
+
+                    .terms{
+                        color: #ccc;
+                        padding-left: 25px;
+                        margin-top: -16px;
+                        padding-bottom: 30px;
+                        text-align: center;
+
+                    }
+                    .connect-box{
+                        color: #ccc;
+                        padding-left: 25px;
+                        line-height: 54px;
+                        text-align:    center;
+
+                    }
+                    .connect-box a{
+                        font-size: 24px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        background: #092f40;
+                        padding: 9px;
+                        line-height: 0px;
+                        text-align: center;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50px;
+                        box-shadow: inset 0px 0px 6px 0px rgba(0,0,0,0.3);
+                        margin-top: -4px;
+                        margin-right: 6px;
+                        margin-left: 6px;
+                    }
+                    .connect-box i{
+
+                    }
+                    .txtconnect{
+                        display: none;
+                        outline: none;
+                        background: #092f40;
+                        color: #ccc;
+                        font-size: 12px;
+                        font-weight: 700;
+                        height: 25px;
+                        cursor: pointer;
+                        padding: 7px 10px 6px;
+
+                        -webkit-transition: all 200ms linear;
+                        -moz-transition: all 200ms linear;
+                        -ms-transition: all 200ms linear;
+                        -o-transition: all 200ms linear;
+                        transition: all 200ms linear;
+                        width: 198px;
+                        border: 1px solid #072330;
+
+                        border-radius: 3px;
+                    }
+
+
+                    .f-item .tittle {
+                        font-size: 30px;
+                        font-family: ft-1;
+                        color: orange;
+                    }
+                    .f-item .sub-tittle {
+                        font-size: 14px;
+                        font-family: 'Raleway';
+                    }
+                </style>
+                <div class="div-800">
+                    <div class="f-row">
+                        <div class="f-item">
+                            <h1>
+                                <a href="#">About</a>
+                            </h1>
+                            <ul>
+                                <li><a href="#" >Locations</a></li>
+                                <li><a href="#" >Our Story</a></li>
+                                <li><a href="#" >Team</a></li>
+                                <li><a href="#" >Portfolio</a></li>
+                                <li><a href="#" >Awards</a></li>
+
+                            </ul>
+                        </div><div class="f-item">
+                            <h1>
+                                <a href="#">Services</a>
+                            </h1>
+                            <ul>
+                                <li><a href="#" >Instant Service</a></li>
+                                <li><a href="#" >Subscription Based</a></li>
+                                <li><a href="#" >Free Trial</a></li>
+                                <li><a href="#" >Delivery</a></li>
+                            </ul>
+                        </div><div class="f-item">
+                            <h1>
+                                <a href="support.html">Support</a>
+                            </h1>
+                            <ul>
+                                <li><a href="#" >Workflow</a></li>
+                                <li><a href="#" >Hardware & Software</a></li>
+                                <!--<li><a href="#" >Software</a></li>-->
+                                <li><a href="whyus.html" >Why Us</a></li>
+                                <li><a href="#" >Tech Expert</a></li>
+                            </ul>
+                        </div><div class="f-item">
+                            <h1>
+                                <a href="contact.html">Contacts</a>
+                            </h1>
+                            <ul>
+                                <li><a href="#" >Send a message</a></li>
+                                <li><a href="#" >Find Us</a></li>
+                            </ul>
+                        </div><div class="f-item">
+                            <h1>
+                                <a href="#">More</a>
+                            </h1>
+                            <ul>
+                                <li><a href="#" >Send a Feedback</a></li>
+                                <li><a href="#" >Chat with Us</a></li>
+                                <li><a href="#" >Terms of use</a></li>
+                                <li><a href="#" >FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chevrons">
+                    <div class="div-800">
+                        <div class="connect-box">
+                            Connect with us on :
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#" style="font-size: 28px;padding: 7px;"><i class="fa fa-dribbble"></i></a>
+                            <a href="#" style="font-size: 26px;padding: 7px;"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" style="font-size: 30px;padding: 7px;"><i class="fa fa-twitter"></i></a>
+                            <input type="text" class="txtconnect" />
+                        </div>
+                    </div>
+                </div>
+                <div class="div-800">
+                    <div class="f-row">
+                        <div class="f-item" style="width: 150px;">
+                            <ul>
+                                <li><a href="#" >Acadia INC</a></li>
+                                <li><a href="#" >Acadia INC,Wilmington</a></li>
+                                <li><a href="#" >Email</a></li>
+                            </ul>
+                        </div>
+                        <div class="f-item">
+
+                            <ul>
+                                <li><a href="#" >1800 874 3902</a></li>
+                                <li><a href="#" >998989XXXX</a></li>
+                                <li><a href="#" >abc@bbc.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="f-item hidden-mobile" style="float: right;width: 450px;margin-right: 30px;">
+                            <div class="tittle">Acadia Inc.</div>
+                            <div class="sub-tittle">We also provide trial services. (<a href="#">Trial Session</a>)</div>
+                        </div>
+                    </div>
+                    <div class="terms"> 
+                        &copy; 2013–2014 Acadia INC. <a href="terms.html">Terms &amp; Conditions</a> : <a href="privacy.html">Privacy Policy</a> : <a href="refund.html">Refund Policy</a> : <a href="warranty.html">Service Warranty</a> | <a href="#">Technician Login</a>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <!--Body Content Ends-->
+        <script src="js/jQuery1.8.3.js"></script>
+        <script src="js/carousel/bootstrap-transition.js"></script>
+        <script src="js/carousel/bootstrap-carousel.js"></script>
+
+        <script>
+            $('.menu-close').click(function(){
+                $('body').toggleClass('menu-active');
+            });
+            $('.carousel').carousel();
+        </script>
+        <style>
+            @media only screen 
+            and (min-width : 320px) 
+            and (max-width : 768px) {
+
+                body .inline-2-100{
+                    width: 100%;
+                }
+                header{
+                    padding: 14px 10px;
+                    text-align: left;
+                }
+                .menu-close{
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                .logo{
+                    width: 54px;
+                    top: 2px;
+                    left: 48px;
+                }
+                .search-blk{
+                    float: right;
+                    top: 2px;
+                    margin-right: 0px;
+                }
+                .header-top,header .nav{
+                    display: none;
+                }
+                .hidden-mobile{
+                    display: none;
+                }
+                .service-3>div{
+                    border: 1px #BFBFBF solid !important;
+                    border-top:0 !important;
+                }
+            }
+
+
+            @media only screen 
+            and (min-width : 769px) 
+            and (max-width : 1025px) {
+                .hidden-small-desktop{
+                    display: none !important;
+                }
+                .service-3>div{
+                    min-height: 500px;
+                }
+                .header-top{
+                    text-align: right;
+                }
+
+                .header-top ul>li>a{
+                    padding: 5px 10px 5px 10px;
+                }
+
+            }
+
+        </style>
+    </body>
+</html>

@@ -1,0 +1,194 @@
+/* 
+    Document   : acadia
+    Created on : Aug 8, 2014, 12:24:29 PM
+    Author     : Yogi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+*{margin: 0;padding: 0;}
+::selection
+{
+    background: transparent;
+}
+::-moz-selection
+{
+    background: transparent;
+}
+*, *:after, *::before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'ft-1';
+    src: url('../font/nyce/27E728_2_0.woff');
+}
+@font-face {
+    font-family: 'ft-2';
+    src: url('../font/nyce/27E728_3_0.woff');
+}
+@font-face {
+    font-family: 'yogi';
+    src: url('../font/1-regular-webfont.woff');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 100;
+    src: url('../font/rale/Raleway-Thin.ttf');
+}
+
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 200;
+    src: url('../font/rale/Raleway-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../font/rale/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../font/rale/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../font/rale/Raleway-Medium.ttf');
+}
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../font/rale/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../font/rale/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../font/rale/Raleway-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../font/rale/Raleway-Heavy.ttf');
+}
+
+
+.inline-2-100{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.blk-30{
+    width: 30%;
+}
+.blk-40{
+    width: 40%;
+}
+.blk-50{
+    width: 50%;
+}
+.blk-60{
+    width: 60%;
+}
+.blk-70{
+    width: 70%;
+}
+
+
+
+
+body{
+
+    font-family: 'yogi';
+
+    font-size: 12px;
+    overflow-x: hidden;
+    /*                background: #CAE87D;                 green
+                    background: #E6E9ED;                grey*/
+    background: #06A6E1;
+    /*                background: #EEFABC;
+                    background: #FFC393;*/
+
+    background: #f5d76e;
+    background: #f0f3f5;
+    background: #E9E0D7;
+    background: #dfdfdf;
+    background: #e6e8eb;
+    color: #919191;
+
+
+}
+/*footer bg
+background: #3d3d3d;*/
+a{
+    text-decoration: none;
+    color: white;
+
+} 
+
+
+a{
+    text-decoration: none;
+    color: orange;
+
+}
+
+
+
+
+.chevrons {
+
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 50px;
+
+    position: relative;
+}
+
+
+.chevrons:before, .chevrons:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    z-index: 1;
+}
+.chevrons:before {
+    background: url('../img/chevrons-left.png') repeat 100% 0;
+    right: 50%;
+}
+.chevrons:after {
+    background: url('../img/chevrons-right.png') repeat 0 0;
+    right: 0;
+}
