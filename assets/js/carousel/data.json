@@ -1,0 +1,20 @@
+{
+	"img":"Image Source",
+	"buttonsConfig":{
+		"btn-left-1":{
+			"label":"Child Data 1 Level 1",
+			"modalConfig":{
+				"header":"Child Data 1 Level 1",
+				"FolderLink":"ChildData1_l1"
+			}
+		},
+		
+		"btn-left-2":{
+			"label":"Child Data 2 Level 1",
+			"modalConfig":{
+				"header":"Child Data 2 Level 2",
+				"FolderLink":"ChildData2_l1"
+			}
+		}
+	}
+}
